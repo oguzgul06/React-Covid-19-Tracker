@@ -5,6 +5,7 @@ import InfoBox from "./components/InfoBox";
 import Map from "./components/Map";
 import { Card, CardContent } from "@material-ui/core";
 import Table from "./components/Table";
+import { sortData } from "./components/util";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -30,7 +31,8 @@ function App() {
             value: country.countryInfo.iso2,
           }));
 
-          setTableData(data);
+          const sortedData = sortData(data);
+          setTableData(sortedData);
           setCountries(countries);
         });
     };
