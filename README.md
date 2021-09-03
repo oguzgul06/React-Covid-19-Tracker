@@ -4,4 +4,4 @@
 
 I was using API with disease.sh because I want to realtime data 
 
-So, you can learn and see data wtih realtime
+So, you can learn and see data with realtime
